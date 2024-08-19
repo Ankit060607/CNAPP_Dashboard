@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "CSPM Executive Dashboard",
+      "widgets": [
+        { "id": "1", "name": "Widget 1", "text": "In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.The first publicly available description of HTML was a document called first 1991." },
+        { "id": "2", "name": "Widget 2", "text": "In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.The first publicly available description of HTML was a document called first 1991." }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "CWPP Dashboard",
+      "widgets": [
+        { "id": "1", "name": "Widget 12", "text": "In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.The first publicly available description of HTML was a document called first 1991." },
+        { "id": "2", "name": "Widget 22", "text": "In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.The first publicly available description of HTML was a document called first 1991." }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Registry Scan",
+      "widgets": [
+        { "id": "1", "name": "Widget 13", "text": "In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.The first publicly available description of HTML was a document called first 1991." },
+        { "id": "2", "name": "Widget 23", "text": "In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.The first publicly available description of HTML was a document called first 1991." }
+      ]
+    }
+  ]
+}
