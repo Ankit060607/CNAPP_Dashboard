@@ -104,7 +104,7 @@ const Dashboard = () => {
   const handleSlider = (categoryId, direction) => {
     setVisibleCardIndex(prev => {
       const currentIndex = prev[categoryId] || 0;
-      const widgetsCount = dashboardData.categories.find(c => c.id === categoryId).widgets.length;
+      const widgetsCount = dashboardData.categories.find(c => c.id === categoryId).widgets.filter(widget => !widget.isBlank).length;
       const maxIndex = Math.max(widgetsCount - 2, 0);
       const newIndex =
         direction === 'right'
@@ -142,7 +142,8 @@ const Dashboard = () => {
         id: new Date().toISOString(), // Unique ID (could be more sophisticated)
         name: `New ${selectedWidgetType} Widget`,
         text: '',
-        placeholder:"Widget content here"
+        placeholder: "Widget content here",
+        isBlank: false, // Ensure new widgets are not blank
       };
 
       setDashboardData(prevData => ({
@@ -191,7 +192,7 @@ const Dashboard = () => {
             const currentIndex = visibleCardIndex[category.id] || 0;
             const widgetsToShow = searchTerm
               ? category.widgets
-              : category.widgets.slice(currentIndex, currentIndex + 2);
+              : category.widgets.filter(widget => !widget.isBlank).slice(currentIndex, currentIndex + 2);
 
             return (
               <div key={category.id} className="flex flex-col space-y-4 relative">
@@ -229,7 +230,7 @@ const Dashboard = () => {
                           </button>
                         </div>
                         {/* Right Slider Button */}
-                        {idx === 1 && currentIndex + 2 < category.widgets.length && (
+                        {idx === 1 && currentIndex + 2 < category.widgets.filter(widget => !widget.isBlank).length && (
                           <button
                             onClick={() => handleSlider(category.id, 'right')}
                             className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-400 hover:bg-gray-500 text-white w-12 h-12 flex items-center justify-center rounded-full"
@@ -245,7 +246,7 @@ const Dashboard = () => {
                       No results found
                     </div>
                   )}
-                  
+
                   {Array.from({ length: 2 - widgetsToShow.length }).map((_, index) => (
                     <div
                       key={index}
@@ -280,7 +281,8 @@ const Dashboard = () => {
                   <h3 className="text-lg font-semibold mb-4">Select Widgets to Edit</h3>
                   {dashboardData.categories
                     .find(category => category.id === selectedCategoryId)
-                    ?.widgets.map(widget => (
+                    ?.widgets.filter(widget => !widget.isBlank)
+                    .map(widget => (
                       <div key={widget.id} className="mb-4">
                         <div className="flex items-center mb-2">
                           <input
@@ -300,7 +302,7 @@ const Dashboard = () => {
                   <h3 className="text-lg font-semibold mb-4">Edit Widgets</h3>
                   {dashboardData.categories
                     .find(category => category.id === selectedCategoryId)
-                    ?.widgets.filter(widget => selectedWidgetIds.includes(widget.id))
+                    ?.widgets.filter(widget => selectedWidgetIds.includes(widget.id) && !widget.isBlank)
                     .map(widget => (
                       <div key={widget.id} className="mb-4">
                         <div className="pl-6">
