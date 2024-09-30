@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# CNAPP_DASHBOARD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application built using the React.Js and Tailwind CSS . It is a CNAPP Dashboard that allows users to Search and Add the new Widget in our Dashboard.
 
-## Available Scripts
+# Installation
 
-In the project directory, you can run:
++ Name:- Ankit Kumar
+  
+# Installation
+
+1. Clone this repository to your local machine:
+
+`git clone https://github.com/Ankit060607/CNAPP_Dashboard.git`
+
+# Usage
+
+To start the application, run the following command in the project root directory:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application should now be running at `http://localhost:3000`. You can access it using your web browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Features
 
-### `npm test`
++ Add Widget and also the Update exist Widget.
++ Search the Widget Name in the Search bar.
++ Remove the Widget.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Contributing
 
-### `npm run build`
+If you would like to contribute to this project, please follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
++ Fork this repository to your own Github account
++ Create a new branch and make your changes.
++ Test your changes thoroughly.
++ Submit a pull request to this repository with a detailed description of your changes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Screenshots
++ HOME PAGE:-
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot (31)](https://github.com/user-attachments/assets/90bd3c9a-446c-45ae-8a4f-a19565310d18)
 
-### `npm run eject`
++ ADD WIDGET:-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot (32)](https://github.com/user-attachments/assets/f7513e5a-8be7-40b8-b16e-e7583a4aa308)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
++ EDIT WIDGET AND ALSO ADD NEW WIDGET:-
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot (33)](https://github.com/user-attachments/assets/f11afdb7-7595-42c7-a9fb-f5576e91529a)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
++ AFTER UPDATING THE WIDGET WE CAN SEE THE DASHBOARD:-
 
-## Learn More
+![Screenshot (34)](https://github.com/user-attachments/assets/e9ff93d5-6a5b-4339-8133-0da071a05e19)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
++ SEARCH FUNCTIONALITY:-
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot (35)](https://github.com/user-attachments/assets/145a00c7-d84f-4966-b108-0c7916670401)
